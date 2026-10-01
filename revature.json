@@ -1,0 +1,65 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/ListExerciseTest.java",
+      "testCases": [
+        {
+          "methodName": "createListTest1",
+          "label": "Verify a new list is instantiated correctly",
+          "description": "Checks that createList() returns a non-null List instance."
+        },
+        {
+          "methodName": "getSizeTest1",
+          "label": "Verify a new list starts with size 0",
+          "description": "Checks that getSize() returns 0 when called on a newly created, empty list."
+        },
+        {
+          "methodName": "getSizeTest2",
+          "label": "Verify adding one item updates list size to 1",
+          "description": "Adds a single element with addToList() and verifies getSize() returns 1."
+        },
+        {
+          "methodName": "addItemTest1",
+          "label": "Verify list contains an item after it is added",
+          "description": "Adds one element with addToList() and verifies the underlying List contains that value."
+        },
+        {
+          "methodName": "addItemTest2",
+          "label": "Verify list contains multiple items after they are added",
+          "description": "Adds two elements with addToList() and verifies the List contains both values."
+        },
+        {
+          "methodName": "getItemTest1",
+          "label": "Verify first added item is retrievable at index 0",
+          "description": "Adds one element and verifies le.get(list, 0) returns the inserted value."
+        },
+        {
+          "methodName": "getItemTest2",
+          "label": "Verify second added item is retrievable at index 1",
+          "description": "Adds two elements and verifies le.get(list, 1) returns the second inserted value."
+        },
+        {
+          "methodName": "removeFromListTest1",
+          "label": "Verify removing the only item leaves the list empty",
+          "description": "Adds one element, removes it with removeFromList(), then verifies the list no longer contains the value and size is 0."
+        },
+        {
+          "methodName": "removeFromListTest2",
+          "label": "Verify removing one of two items leaves the other intact",
+          "description": "Adds two elements, removes one by index, then verifies only the remaining value is present and size is 1."
+        },
+        {
+          "methodName": "updatePositionTest1",
+          "label": "Verify updating index 0 replaces the old value",
+          "description": "Adds two elements, updates the value at index 0 with updateAtPosition(), and verifies the list contains the new value and not the original value."
+        },
+        {
+          "methodName": "updatePositionTest2",
+          "label": "Verify updating index 1 replaces the old value",
+          "description": "Adds two elements, updates the value at index 1 with updateAtPosition(), and verifies the list contains the new value and not the original value."
+        }
+      ]
+    }
+  ]
+}
